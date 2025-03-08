@@ -177,20 +177,39 @@
       <img
         src="./easybank-landing-page-master-20250222T084651Z-001/easybank-landing-page-master/images/logo.svg"
         alt=""
+        style="grid-area: logo"
       />
-      <img
-        src="./easybank-landing-page-master-20250222T084651Z-001/easybank-landing-page-master/images/icon-facebook.svg"
-        alt=""
-      />
+      <div style="grid-area: Icon" id="IC">
+        <img
+          src="./easybank-landing-page-master-20250222T084651Z-001/easybank-landing-page-master/images/icon-facebook.svg"
+          alt=""
+        />
+        <img
+          src="./easybank-landing-page-master-20250222T084651Z-001/easybank-landing-page-master/images/icon-instagram.svg"
+          alt=""
+        />
+        <img
+          src="./easybank-landing-page-master-20250222T084651Z-001/easybank-landing-page-master/images/icon-youtube.svg"
+          alt=""
+        />
+        <img
+          src="./easybank-landing-page-master-20250222T084651Z-001/easybank-landing-page-master/images/icon-twitter.svg"
+          alt=""
+        />
+        <img
+          src="./easybank-landing-page-master-20250222T084651Z-001/easybank-landing-page-master/images/icon-pinterest.svg"
+          alt=""
+        />
+      </div>
 
-      <a href="">About Us</a>
-      <a href="">Contact</a>
-      <a href="">Blog</a>
-      <a href="">Careers</a>
-      <a href="">Support</a>
-      <a href="">Privacy Policy</a>
-      <button>Request Invite</button>
-      <p>@ Easybank. All Rights Reserved.</p>
+      <a href="" style="grid-area: AboutUs">About Us</a>
+      <a href="" style="grid-area: Contact">Contact</a>
+      <a href="" style="grid-area: Blog">Blog</a>
+      <a href="" style="grid-area: Careers">Careers</a>
+      <a href="" style="grid-area: Support">Support</a>
+      <a href="" style="grid-area: Privacy">Privacy Policy</a>
+      <button style="grid-area: Button">Request Invite</button>
+      <p style="grid-area: Rights">@ Easybank. All Rights Reserved.</p>
     </section>
 
     <style>
@@ -213,7 +232,7 @@
       #NavBar {
         display: flex;
         padding-top: 20px;
-        padding-left: 240px;
+        padding-left: 140px;
         padding-right: 190px;
         padding-bottom: 20px;
         flex-direction: row;
@@ -226,6 +245,14 @@
       #Links {
         display: flex;
         gap: 70px;
+      }
+
+      div a {
+        text-decoration: none;
+      }
+
+      #footer a {
+        text-decoration: none;
       }
 
       button {
@@ -255,17 +282,17 @@
 
       #mainheader {
         padding-top: 200px;
-        padding-left: 240px;
+        padding-left: 130px;
       }
 
       #mainparagraph {
         padding-top: 30px;
-        padding-left: 240px;
+        padding-left: 130px;
       }
 
       #mainbutton {
         margin-top: 30px;
-        margin-left: 240px;
+        margin-left: 130px;
       }
 
       #mobile {
@@ -324,10 +351,36 @@
         background-color: white;
       }
 
+      #IC {
+        display: flex;
+        flex-direction: row;
+      }
+
       #footer {
         background-color: darkblue;
+        display: grid;
         height: 150px;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+          ". . . . . . . . . . . ."
+          ". logo . . AboutUs . Careers . . . . ."
+          ". . . . Contact . Support . . Button . ."
+          ". Icon . . Blog . Privacy . . . . ."
+          ". . . . . . . . . Rights Rights .";
       }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      /* <a href="" style="grid-area: AboutUs">About Us</a>
+      <a href="" style="grid-area: Contact">Contact</a>
+      <a href="" style="grid-area: Blog">Blog</a>
+      <a href="" style="grid-area: Careers">Careers</a>
+      <a href="" style="grid-area: Support">Support</a>
+      <a href="" style="grid-area: Privacy">Privacy Policy</a>
+      <button style="grid-area: Button">Request Invite</button> */
     </style>
   </body>
 </html>
