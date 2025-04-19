@@ -6,8 +6,8 @@ let styling = {
   borderRadius: "5px",
 };
 
-function Button() {
-  return <button style={styling}>Click me</button>;
+function Button(props) {
+  return <button style={styling}>{props.text}</button>;
 }
 
 export default Button;
