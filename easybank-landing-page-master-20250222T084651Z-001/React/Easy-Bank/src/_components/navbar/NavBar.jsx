@@ -6,16 +6,16 @@ import Button from "./../button";
 
 export default function Navbar() {
   return (
-    <nav>
-      <Logo>Logo</Logo>
-      <div>
+    <nav className="flex flex-row">
+      <Logo />
+      <div className=" ml-[700px]">
         <NavItem label="Home" href="/" />
         <NavItem label="About" href="/about" />
         <NavItem label="Contact" href="/contact" />
-        <NavItem label="Blog" href="/contact" />
-        <NavItem label="Careers" href="/contact" />
+        <NavItem label="Blog" href="/blog" />
+        <NavItem label="Careers" href="/careers" />
       </div>
-      <Button text="Request Invite"></Button>
+      <Button className="mt-[300px]" text="Request Invite"></Button>
     </nav>
   );
 }
