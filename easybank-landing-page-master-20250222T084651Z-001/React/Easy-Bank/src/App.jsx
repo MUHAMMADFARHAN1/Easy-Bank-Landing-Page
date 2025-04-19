@@ -35,13 +35,11 @@
 // npm install tailwindcss @tailwindcss/vite
 // Zohaibs link: https://tailwindcss.com/docs/installation/using-vite
 
-import Logo from "./_components/navbar/Logo";
 import Navbar from "./_components/navbar/NavBar";
 
 function App() {
   return (
     <>
-      <Logo />
       <Navbar />
     </>
   );

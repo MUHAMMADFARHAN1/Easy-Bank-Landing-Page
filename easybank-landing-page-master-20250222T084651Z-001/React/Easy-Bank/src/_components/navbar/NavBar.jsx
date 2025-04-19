@@ -9,7 +9,6 @@ export default function Navbar() {
     <nav>
       <Logo>Logo</Logo>
       <div>
-        {/* NavItem({label: "Home"}) */}
         <NavItem label="Home" href="/" />
         <NavItem label="About" href="/about" />
         <NavItem label="Contact" href="/contact" />
