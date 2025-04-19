@@ -33,12 +33,13 @@
 // }
 
 import Navbar from "./_components/navbar/NavBar";
+import Hero from "./_components/Hero_Section/Hero";
 
 function App() {
   return (
     <>
       <Navbar />
-      
+      <Hero />
     </>
   );
 }
