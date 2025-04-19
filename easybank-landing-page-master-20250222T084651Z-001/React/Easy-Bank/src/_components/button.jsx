@@ -11,7 +11,11 @@
 // }
 
 function Button(props) {
-  return <button className=" bg-green-600">{props.text}</button>;
+  return (
+    <button className=" bg-green-600 pt-[5px] pb-[5px] pr-[15px] pl-[15px] rounded-[50px]">
+      {props.text}
+    </button>
+  );
 }
 
 export default Button;
